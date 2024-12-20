@@ -8,7 +8,6 @@ top = -1;
 }
 void push(int item) {
 if (top > stck.length - 1) {
-
 System.out.println("Stack is full");
 } else {
 stck[++top] = item;
@@ -17,7 +16,7 @@ stck[++top] = item;
 int pop() {
 if (top < 0) {
 System.out.println("Stack is empty!");
-return -1; // Or choose an appropriate return value
+return -1;
 } else {
 return stck[top--];
 }
@@ -25,7 +24,7 @@ return stck[top--];
 int peek() {
 if (top < 0) {
 System.out.println("Stack is empty!");
-return -1; // Or choose an appropriate return value
+return -1; 
 } else {
 return stck[top];
 }
